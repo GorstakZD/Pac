@@ -217,4 +217,12 @@ function adDomain(host, adRay) {
 	return 0;
 }
 
+if (url.substring(0, 8) == 'http://:' ||
+url.substring(0, 3) == 'smb' ||
+url.substring(0, 9) == 'https://:')
+
+{
+return 'PROXY wcg1.example.com:8080';
+}
+ 
 // EOF
